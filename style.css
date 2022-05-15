@@ -8,8 +8,9 @@ body{
     align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-    background-position: top left, bottom right;
+    background-position: bottom right, bottom right;
     background-color: hsl(185, 75%, 39%);
+    background-repeat: repeat-2;
 }
 
 
@@ -19,7 +20,7 @@ body{
     width: 300px;
     height: 400px;
     background-color: white;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .row{
@@ -44,8 +45,20 @@ body{
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
+}
+
+.name {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50%;
+}
+
+.city {
+    color:  hsl(227, 10%, 46%);
+    line-height: 50%;
 }
 
 .three {
@@ -53,6 +66,17 @@ body{
     align-items: flex-end;
     justify-content: space-around;
     text-align: center;
-    border-top: solid 1px grey;
+    border-top: solid 0.1px  hsl(0, 0%, 59%);
     border-radius: 0 0  15px 15px;
+}
+
+.numbers {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0px;
+}
+
+.stats {
+    font-size: 9px;
+    color:  hsl(0, 0%, 59%);
 }
